@@ -10,12 +10,11 @@
 | <img src=./img/screenshot-1.png> | <img src=./img/screenshot-2.png> |
 |---|---|
 ## Usage
-<code>
-$ bash curl.sh [URL]<p>
-$ bash curl_preprocessing.sh<p>
-$ bash curl_preprocessing-2.sh<p>
-$ bash curl_postprocessing.sh<p>
-$ bash m3u8-download.sh<p></code>
+> $ bash curl.sh [URL]<br>
+> $ bash curl_preprocessing.sh<br>
+> $ bash curl_preprocessing-2.sh<br>
+> $ bash curl_postprocessing.sh<br>
+> $ bash m3u8-download.sh
 
 * You shall be prompted to choose from the m3u8 sources, please choose URLs from the same server. For example, if twelve episodes were provided on the website, and there are 7 servers, then you may be asked to decide the start and end indices of servers (a total of 84). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>73 84</code>.
 
