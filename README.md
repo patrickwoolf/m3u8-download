@@ -5,7 +5,7 @@
 * Change directory into the folder you want to save your videos.
 > $ cd $DIR
 * Clone directly from this repository
-> $ git clone https://github.com/patrickwoolf/m3u8-download <br>
+> $ git clone https://github.com/patrickwoolf/m3u8-download.git <br>
 > $ cd m3u8-download
 ## Importance
 Download series *in a pack semi-automatically* from several online video sources:
