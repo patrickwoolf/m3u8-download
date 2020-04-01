@@ -12,7 +12,7 @@ Download series *in a pack semi-automatically* from several online video sources
 | <img src=./img/screenshot-1.png> | <img src=./img/screenshot-2.png> |
 |---|---|
 ## Usage
-> $ bash curl.sh [URL] # URL of whichever episode of a show you are interested in, please note that the URL of a overview page shall not be working.<br>
+> $ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.<br>
 > $ bash curl_preprocessing.sh<br>
 > $ bash curl_preprocessing-2.sh<br>
 > $ bash curl_postprocessing.sh<br>
