@@ -1,4 +1,6 @@
-# m3u8-download.sh, a semi-automated video downloader based on ffmpeg utilizing online m3u8 filetype
+# m3u8-download.sh, a semi-automated video downloader
+## Author
+> patrickwoolf
 ## Installation
 * Change directory into the folder you want to save your videos.
 > $ cd $DIR
@@ -6,17 +8,17 @@
 > $ git clone https://github.com/patrickwoolf/m3u8-download <br>
 > $ cd m3u8-download
 ## Importance
-*Download series in a pack semi-automatically from several online video sources:*
+Download series *in a pack semi-automatically* from several online video sources:
 | <img src=./img/screenshot-1.png> | <img src=./img/screenshot-2.png> |
 |---|---|
 ## Usage
-> $ bash curl.sh [URL]<br>
+> $ bash curl.sh [URL] # URL of whichever episode of a show you are interested in, please note that the URL of a overview page shall not be working.<br>
 > $ bash curl_preprocessing.sh<br>
 > $ bash curl_preprocessing-2.sh<br>
 > $ bash curl_postprocessing.sh<br>
 > $ bash m3u8-download.sh
 
-* You shall be prompted to choose from the m3u8 sources, please choose URLs from the same server. For example, if twelve episodes were provided on the website, and there are 7 servers, then you may be asked to decide the start and end indices of servers (a total of 84). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>73 84</code>.
+You shall be prompted to choose from several m3u8 sources, please choose URLs from the same server. For example, if twelve episodes were provided on the website, and there are 7 servers, then you may be asked to decide the start and end indices of servers (a total of 84). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>73 84</code>.
 
 ### What does each script do?
 * <code>curl.sh</code> grabs the source code from online video sites.
