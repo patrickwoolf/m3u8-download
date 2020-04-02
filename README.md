@@ -3,7 +3,7 @@
 > patrickwoolf
 ## Installation
 <details>
-	<summary>[← ] If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the commands below.</summary>
+	<summary>[← ] If you are a <b>Windows user</b>, you could download <b>Ubuntu WSL</b> from Microsoft Store, and run the commands below.</summary>
 
 * <img src=./img/wsl-store.png>
 * <img src=./img/ubuntustore.png>
@@ -87,21 +87,24 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 		* brew install ffmpeg.
 		* run m3u8-download above-mentionedly.
 	* Windows
-		* Download WSL (Windows Subsystem for Linux) from Microsoft Store
+		<details>
+			<summary>Download WSL (Windows Subsystem for Linux) from Microsoft Store</summary>
+
 		* <img src=./img/wsl-store.png>
-		* Choose Ubuntu
-		* <img src=./img/ubuntustore.png>
-		* Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
-		* download necessary packages from apt
-		```bash 
-		$ sudo apt install ffmpeg sed git
-		```
-		* change directory to your windows system, for example, C:\Users\User\Videos\
-		```bash
-		$ cd /mnt/c/Users/User/Videos/
-		$ git clone https://github.com/patrickwoolf/m3u8-download.git
-		$ cd m3u8-download/
-		```
+                * Choose Ubuntu
+                * <img src=./img/ubuntustore.png>
+                * Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
+                * download necessary packages from apt
+                ```bash 
+                $ sudo apt install ffmpeg sed git
+                ```
+                * change directory to your windows system, for example, C:\Users\User\Videos\
+                ```bash
+                $ cd /mnt/c/Users/User/Videos/
+                $ git clone https://github.com/patrickwoolf/m3u8-download.git
+                $ cd m3u8-download/
+                ```
+		</details>
 		* Now you can use this repository smoothly.
 		```bash
 		$ bash ./m3u8-download [URL] [FILENAME YOU WANT]
