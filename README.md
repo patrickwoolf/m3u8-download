@@ -2,7 +2,7 @@
 ## Author
 > patrickwoolf
 ## Installation
-* <details><summary>[← Clickable]If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the commands below.</summary><ul>	<li><img src=./img/wsl-store.png></li>	<li><img src=./img/ubuntustore.png></li>	<li>Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)</li>	<li>Download necessary packages from apt:<li>	<code>sudo apt install ffmpeg sed git</code>	<li>Change directory to your windows system, for example, C:\Users\User\Videos\ </li>	<code>cd /mnt/c/Users/User/Videos/</code></ul>
+* <details><summary>[← Clickable]If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the commands below.</summary><ul>	<li><img src=./img/wsl-store.png></li>	<li><img src=./img/ubuntustore.png></li>	<li>Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)</li>	<li>Download necessary packages from apt:<li>	<code>$ sudo apt install ffmpeg sed git</code>	<li>Change directory to your windows system, for example, C:\Users\User\Videos\ </li>	<code>$ <span style="color:blue">cd</span> /mnt/c/Users/User/Videos/</code></ul>
 </details>
 
 * Change directory into the folder you want to save your videos.
