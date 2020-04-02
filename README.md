@@ -36,7 +36,7 @@ Download series *in a pack semi-automatically* from several online video sources
 ## Usage
 ### If you want to download videos from YouTube...
 ```bash
-bash m3u8-download.sh [YouTube url]
+$ bash m3u8-download.sh [YouTube url]
 ```
 ..., the above command works just fine.
 ### Other sites
