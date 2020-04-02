@@ -89,6 +89,7 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 	* Windows
 		<details>
 			<summary>Download WSL (Windows Subsystem for Linux) from Microsoft Store</summary>
+		
 		* <img src=./img/wsl-store.png>
 		* Choose Ubuntu
 		* <img src=./img/ubuntustore.png>
