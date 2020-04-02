@@ -1,6 +1,15 @@
 #!/bin/bash
 #bash curl.sh [URL] 
 #bash curl_preprocessing.sh 
+## YouTube support
+if [[ -n $1 ]]; then
+	if [[ -n $(ls /usr/local/bin/ | grep youtub-dl)]]
+		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+		sudo chmod a+rx /usr/local/bin/youtube-dl
+	fi
+	youtube-dl $1 -f mp4 -o "./videos/%(title)s.%(ext)s"
+fi
+## Main code starts here:
 cp ./curlresult.txt ./curlresult.sh
 cat curlresult.sh
 n=$(wc -l curlresult.sh)
