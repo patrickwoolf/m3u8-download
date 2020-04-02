@@ -3,45 +3,56 @@
 > patrickwoolf
 ## Installation
 * <details><summary>[← Clickable]If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the commands below.</summary>
-- <img src=./img/wsl-store.png>
-- <img src=./img/ubuntustore.png>
-- Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
-- Download necessary packages from apt:
-```bash
-sudo apt install ffmpeg sed git
-```
-- Change directory to your windows system, for example, C:\Users\User\Videos\
-```bash
-cd /mnt/c/Users/User/Videos/
-```
+<ul>
+	<li><img src=./img/wsl-store.png></li>
+	<li><img src=./img/ubuntustore.png></li>
+	<li>Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)</li>
+	<li>Download necessary packages from apt:<li>
+		```bash
+		sudo apt install ffmpeg sed git
+		```
+	<li>Change directory to your windows system, for example, C:\Users\User\Videos\</li>
+		```bash
+		cd /mnt/c/Users/User/Videos/
+		```
+</ul>
 </details>
 * Change directory into the folder you want to save your videos.
-* > $ cd $DIR
+```bash
+$ cd $DIR
+```
 * Clone directly from this repository
-* > $ git clone https://github.com/patrickwoolf/m3u8-download.git <br>
-* > $ cd m3u8-download
+```bash
+$ git clone https://github.com/patrickwoolf/m3u8-download.git <br>
+$ cd m3u8-download
+```
 
 ## Importance
 Download series *in a pack semi-automatically* from several online video sources:
 | <img src=./img/screenshot-1.png> | <img src=./img/screenshot-2.png> |
 |---|---|
 ## Usage
-> $ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.<br>
-> $ bash curl_preprocessing.sh<br>
-> $ bash m3u8-download.sh
-
+```bash 
+$ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.<br>
+$ bash curl_preprocessing.sh<br>
+$ bash m3u8-download.sh
+```
 You shall be prompted to choose from several m3u8 sources, please choose URLs from the same server. For example, if twelve episodes were provided on the website, and there are 7 servers, then you may be asked to decide the start and end indices of servers (a total of 84). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>73 84</code>.
 
 After these process your videos will be downloaded in ./videos.
 
 p.s. If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the above commands.
-* <img src=./img/wsl-store.png>
-* <img src=./img/ubuntustore.png>
+	<img src=./img/wsl-store.png>
+	<img src=./img/ubuntustore.png>
 * Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
 * Download necessary packages from apt:
-* > sudo apt install ffmpeg sed git
+```bash 
+$ sudo apt install ffmpeg sed git
+```
 * Change directory to your windows system, for example, C:\Users\User\Videos\
-* > cd /mnt/c/Users/User/Videos/
+```bash
+$ cd /mnt/c/Users/User/Videos/
+```
 ### What does each script do?
 * <code>curl.sh</code> grabs the source code from online video sites.
 * <code>curl_preprocessing.sh</code> changes the m3u8 URLs curled from the website to human readable ones, which is then a text file *curlresult.txt*.
@@ -74,12 +85,18 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 		* <img src=./img/ubuntustore.png>
 		* Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
 		* download necessary packages from apt
-		* > sudo apt install ffmpeg sed git
+		```bash 
+		sudo apt install ffmpeg sed git
+		```
 		* change directory to your windows system, for example, C:\Users\User\Videos\
-		* > cd /mnt/c/Users/User/Videos/
-		* > git clone https://github.com/patrickwoolf/m3u8-download.git
+		```bash
+		cd /mnt/c/Users/User/Videos/
+		git clone https://github.com/patrickwoolf/m3u8-download.git
+		```
 		* Now you can use this repository smoothly.
-		* > bash ./m3u8-download \[URL\] \[FILENAME YOU WANT\]
+		```bash
+		bash ./m3u8-download \[URL\] \[FILENAME YOU WANT\]
+		```
 		* Whoa, your video would be downloaded now. Have a coffee, it will be finished in a few minutes based on the size of the video.
 ## Acknowledgement
 * [Alessandro Pezzato on Stack Overflow](https://stackoverflow.com/questions/10909685/run-parallel-multiple-commands-at-once-in-the-same-terminal)
