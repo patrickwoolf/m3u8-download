@@ -2,7 +2,7 @@
 ## Author
 > patrickwoolf
 ## Installation
-* <details>
+<details>
 	<summary>[← ] If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the commands below.</summary>
 
 * <img src=./img/wsl-store.png>
