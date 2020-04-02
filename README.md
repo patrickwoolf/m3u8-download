@@ -2,28 +2,16 @@
 ## Author
 > patrickwoolf
 ## Installation
-* <details><summary>[← Clickable]If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the commands below.</summary>
-<ul>
-	<li><img src=./img/wsl-store.png></li>
-	<li><img src=./img/ubuntustore.png></li>
-	<li>Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)</li>
-	<li>Download necessary packages from apt:<li>
-		```bash
-		sudo apt install ffmpeg sed git
-		```
-	<li>Change directory to your windows system, for example, C:\Users\User\Videos\</li>
-		```bash
-		cd /mnt/c/Users/User/Videos/
-		```
-</ul>
+* <details><summary>[← Clickable]If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the commands below.</summary><ul>	<li><img src=./img/wsl-store.png></li>	<li><img src=./img/ubuntustore.png></li>	<li>Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)</li>	<li>Download necessary packages from apt:<li>	<code>sudo apt install ffmpeg sed git</code>	<li>Change directory to your windows system, for example, C:\Users\User\Videos\ </li>	<code>cd /mnt/c/Users/User/Videos/</code></ul>
 </details>
+
 * Change directory into the folder you want to save your videos.
 ```bash
 $ cd $DIR
 ```
 * Clone directly from this repository
 ```bash
-$ git clone https://github.com/patrickwoolf/m3u8-download.git <br>
+$ git clone https://github.com/patrickwoolf/m3u8-download.git
 $ cd m3u8-download
 ```
 
@@ -33,8 +21,8 @@ Download series *in a pack semi-automatically* from several online video sources
 |---|---|
 ## Usage
 ```bash 
-$ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.<br>
-$ bash curl_preprocessing.sh<br>
+$ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.
+$ bash curl_preprocessing.sh
 $ bash m3u8-download.sh
 ```
 You shall be prompted to choose from several m3u8 sources, please choose URLs from the same server. For example, if twelve episodes were provided on the website, and there are 7 servers, then you may be asked to decide the start and end indices of servers (a total of 84). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>73 84</code>.
