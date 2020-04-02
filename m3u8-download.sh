@@ -17,7 +17,8 @@ x=$((end-start))
 sed -i -e 's#^#\"\./m3u8-download #' curlresult.sh > download-command
 sed -i -e ''$s','$ee'!d' curlresult.sh > download-command
 read -p "Give the video name: " vname
-sed -i -e 's/$/ '/videos/$vname'/' curlresult.sh > downlaod-command
+sed -i -e 's#$# \.\/videos\/#' curlresult.sh > download-command
+sed -i -e 's/$/'$vname'/' curlresult.sh > download-command
 cat curlresult.sh
 echo
 read -p "Waiting..., please check if the curlresult with video name is correct: " waitingi1
