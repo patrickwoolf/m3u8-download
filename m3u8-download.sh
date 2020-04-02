@@ -1,6 +1,15 @@
 #!/bin/bash
 #bash curl.sh [URL] 
 #bash curl_preprocessing.sh 
+## If you want to download youtube video...
+if [[ -n $1 ]]; then
+	sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
+	sudo chmod a+x /usr/local/bin/youtube-dl
+	hash -r
+	youtube-dl -f mp4 $1
+	exit
+fi
+## Main code starts here...
 cp ./curlresult.txt ./curlresult.sh
 cat curlresult.sh
 n=$(wc -l curlresult.sh)
