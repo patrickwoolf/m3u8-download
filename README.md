@@ -32,20 +32,35 @@ $ cd m3u8-download
 Download series *in a pack semi-automatically* from several online video sources:
 | <img src=./img/screenshot-1.png> | <img src=./img/screenshot-2.png> |
 |---|---|
-## Usage
-```bash 
-$ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.
-$ bash curl_preprocessing.sh
-$ bash m3u8-download.sh
-```
-You shall be prompted to choose from several m3u8 sources, please choose URLs from the same server. For example, if twelve episodes were provided on the website, and there are 7 servers, then you may be asked to decide the start and end indices of servers (a total of 84). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>73 84</code>.
 
-After these process your videos will be downloaded in ./videos.
+## Usage
 ### If you want to download videos from YouTube...
 ```bash
 bash m3u8-download.sh [YouTube url]
 ```
 ..., the above command works just fine.
+### Other sites
+You can download from several video streamers online, e.g. Gimy劇迷, MOMOVOD, ...
+```bash 
+$ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.
+$ bash curl_preprocessing.sh
+$ bash m3u8-download.sh
+```
+You shall be prompted to choose from several m3u8 sources, please choose URLs from the same server. 
+<img src=./img/screenshot-11.png>
+For example, if one show has 6 episodes in total, and there are 5 servers, then you may be asked to decide the start and end indices of servers (a total of 30). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>19 24</code>.
+<img src=./img/screenshot-12.png>
+<img src=./img/screenshot-13.png>
+
+Then you would be able to type in the video name you want, notice that the episode number would be added automatically later, it's not necessary to type the episodes as well.
+<img src=./img/screenshot-14.png>
+Check if the video name is correct...
+<img src=./img/screenshot-15.png>
+Check if the episodes are correct..., the bash script would be copied to a file named <code>download-command.sh</code>
+<img src=./img/screenshot-16.png> 
+
+After these process your videos will be downloaded in ./videos.
+
 ### What does each script do?
 * <code>curl.sh</code> grabs the source code from online video sites.
 * <code>curl_preprocessing.sh</code> changes the m3u8 URLs curled from the website to human readable ones, which is then a text file *curlresult.txt*.
@@ -79,17 +94,17 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 		* Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
 		* download necessary packages from apt
 		```bash 
-		sudo apt install ffmpeg sed git
+		$ sudo apt install ffmpeg sed git
 		```
 		* change directory to your windows system, for example, C:\Users\User\Videos\
 		```bash
-		cd /mnt/c/Users/User/Videos/
-		git clone https://github.com/patrickwoolf/m3u8-download.git
-		cd m3u8-download/
+		$ cd /mnt/c/Users/User/Videos/
+		$ git clone https://github.com/patrickwoolf/m3u8-download.git
+		$ cd m3u8-download/
 		```
 		* Now you can use this repository smoothly.
 		```bash
-		bash ./m3u8-download [URL] [FILENAME YOU WANT]
+		$ bash ./m3u8-download [URL] [FILENAME YOU WANT]
 		```
 		* Whoa, your video would be downloaded now. Have a coffee, it will be finished in a few minutes based on the size of the video.
 ## Acknowledgement
