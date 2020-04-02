@@ -68,10 +68,11 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 		```bash
 		cd /mnt/c/Users/User/Videos/
 		git clone https://github.com/patrickwoolf/m3u8-download.git
+		cd m3u8-download/
 		```
 		* Now you can use this repository smoothly.
 		```bash
-		bash ./m3u8-download \[URL\] \[FILENAME YOU WANT\]
+		bash ./m3u8-download [URL] [FILENAME YOU WANT]
 		```
 		* Whoa, your video would be downloaded now. Have a coffee, it will be finished in a few minutes based on the size of the video.
 ## Acknowledgement
