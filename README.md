@@ -90,20 +90,21 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 		<details>
 			<summary>Download WSL (Windows Subsystem for Linux) from Microsoft Store</summary>
 		
-			* <img src=./img/wsl-store.png>
-	                * Choose Ubuntu
-        	        * <img src=./img/ubuntustore.png>
-                	* Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
-	                * download necessary packages from apt
-	  	        ```bash 
-	                $ sudo apt install ffmpeg sed git
-	                ```
-	                * change directory to your windows system, for example, C:\Users\User\Videos\
-	                ```bash
-	                $ cd /mnt/c/Users/User/Videos/
-	                $ git clone https://github.com/patrickwoolf/m3u8-download.git
-	                $ cd m3u8-download/
-	                ```
+		* <img src=./img/wsl-store.png>
+	        * Choose Ubuntu
+       	        * <img src=./img/ubuntustore.png>
+               	* Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
+                * download necessary packages from apt
+  	        ```bash 
+                $ sudo apt install ffmpeg sed git
+                ```
+                * change directory to your windows system, for example, C:\Users\User\Videos\
+                ```bash
+                $ cd /mnt/c/Users/User/Videos/
+                $ git clone https://github.com/patrickwoolf/m3u8-download.git
+                $ cd m3u8-download/
+                ```
+
 		</details>
 		* Now you can use this repository smoothly.
 		```bash
