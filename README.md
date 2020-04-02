@@ -29,18 +29,6 @@ You shall be prompted to choose from several m3u8 sources, please choose URLs fr
 
 After these process your videos will be downloaded in ./videos.
 
-p.s. If you are a Windows user, you could download Ubuntu WSL from Microsoft Store, and run the above commands.
-	<img src=./img/wsl-store.png>
-	<img src=./img/ubuntustore.png>
-* Open Ubuntu from your application launcher (press Super/Windows and type in Ubuntu, open the terminal console)
-* Download necessary packages from apt:
-```bash 
-$ sudo apt install ffmpeg sed git
-```
-* Change directory to your windows system, for example, C:\Users\User\Videos\
-```bash
-$ cd /mnt/c/Users/User/Videos/
-```
 ### What does each script do?
 * <code>curl.sh</code> grabs the source code from online video sites.
 * <code>curl_preprocessing.sh</code> changes the m3u8 URLs curled from the website to human readable ones, which is then a text file *curlresult.txt*.
