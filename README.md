@@ -41,7 +41,11 @@ $ bash m3u8-download.sh
 You shall be prompted to choose from several m3u8 sources, please choose URLs from the same server. For example, if twelve episodes were provided on the website, and there are 7 servers, then you may be asked to decide the start and end indices of servers (a total of 84). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>73 84</code>.
 
 After these process your videos will be downloaded in ./videos.
-
+### If you want to download videos from YouTube...
+```bash
+bash m3u8-download.sh [YouTube url]
+```
+..., the above command works just fine.
 ### What does each script do?
 * <code>curl.sh</code> grabs the source code from online video sites.
 * <code>curl_preprocessing.sh</code> changes the m3u8 URLs curled from the website to human readable ones, which is then a text file *curlresult.txt*.
