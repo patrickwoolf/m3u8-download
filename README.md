@@ -79,7 +79,7 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 * Right click on and copy the link, open the terminal on your computer:
   <img src=./img/screenshot-7.png>
   <img src=./img/screenshot-9.png>
-	* Ubuntu/Fedora and other Linux: 
+	* Ubuntu/Debian and other Linux: 
 		* <img src=./img/screenshot-10.png>
 	* MacOS
 		* Download homebrew.
