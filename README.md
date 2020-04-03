@@ -26,6 +26,7 @@ $ cd $DIR
 ```bash
 $ git clone https://github.com/patrickwoolf/m3u8-download.git
 $ cd m3u8-download
+$ bash setup.sh
 ```
 
 ## Importance
