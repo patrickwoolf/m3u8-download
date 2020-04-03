@@ -3,7 +3,7 @@
 #bash curl_preprocessing.sh 
 ## YouTube support
 if [[ -n $1 ]]; then
-	if [[ -z $(ls /usr/local/bin/ | grep youtub-dl) ]]; then
+	if [[ -z $(grep "youtub-dl" -r /usr/local/bin/ /usr/bin/) ]]; then
 		sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 
 		sudo chmod a+rx /usr/local/bin/youtube-dl
@@ -14,7 +14,7 @@ fi
 cp ./curlresult.txt ./curlresult.sh
 cat curlresult.sh
 n=$(wc -l curlresult.sh)
-if [[ -n $(ls | videos) ]]; then
+if [[ -z $(ls | grep videos) ]]; then
 	mkdir videos
 fi
 echo
