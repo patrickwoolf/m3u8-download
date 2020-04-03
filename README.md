@@ -1,6 +1,10 @@
 # m3u8-download.sh, a semi-automated video downloader
 ## Author
 > patrickwoolf
+## Importance
+Download series *in a pack semi-automatically* from several online video sources:
+<img src=./img/screenshot-1.png> 
+<img src=./img/screenshot-2.png>
 ## Installation
 <details>
 	<summary>[← ] If you are a <b>Windows user</b>, you could download <b>Ubuntu WSL</b> from Microsoft Store, and run the commands below.</summary>
@@ -28,12 +32,6 @@ $ git clone https://github.com/patrickwoolf/m3u8-download.git
 $ cd m3u8-download
 $ bash setup.sh
 ```
-
-## Importance
-Download series *in a pack semi-automatically* from several online video sources:
-| <img src=./img/screenshot-1.png> | <img src=./img/screenshot-2.png> |
-|---|---|
-
 ## Usage
 ### If you want to download videos from YouTube...
 ```bash
