@@ -18,7 +18,7 @@ $ sudo apt install ffmpeg sed git
 ```
 * Change directory to your windows system, for example, C:\Users\User\Videos\ 
 ```bash 
-$ cd /mnt/c/Users/User/Videos/</code></ul>
+$ cd /mnt/c/Users/User/Videos/
 ```
 </details>
 
