@@ -32,15 +32,16 @@ x=$((end-start))
 sed -i -e 's#^#\"\./m3u8-download #' curlresult.sh > download-command
 sed -i -e ''$s','$ee'!d' curlresult.sh > download-command
 read -p "Give the video name (no space): " vname
-sed -i -e 's#$# \.\/videos\/#' curlresult.sh > download-command
+sed -i -e 's#$# \..\/videos\/#' curlresult.sh > download-command
 sed -i -e 's/$/'$vname'/' curlresult.sh > download-command
+read -p "Which episode does your download start with? " ep
+for (( i=1; i<=x+1; i++ )); do 
+	sed -i -e ''$i' s/$/'$ep'\"/' curlresult.sh > download-command
+	ep=$(($ep+1))
+done
 cat curlresult.sh
 echo
-read -p "Waiting..., please check if the curlresult with video name is correct: " waitingi1
-for (( i=1; i<=x+1; i++ )); do 
-	sed -i -e ''$i' s/$/'$i'\"/' curlresult.sh > download-command
-done
-
+read -p "Waiting..., please check if the curlresult with video name is correct: " waiting1
 echo "You are going to download from source #"$((start))
 command=$(cat curlresult.sh | grep \.\/m3u8)
 echo
@@ -51,6 +52,6 @@ cat download-command.sh
 echo "............................................."
 echo
 read -p "This is the last step before executing parallel download, checking... If everything is OK press ENTER:" waiting2
-
+echo "du -h ../videos/"$vname" | cut -f1" >> download-command.sh
 #exec $(echo "bash ./parallel.sh" $command)
 exec bash download-command.sh

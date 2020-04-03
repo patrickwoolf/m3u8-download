@@ -35,16 +35,23 @@ $ bash setup.sh
 ## Usage
 ### If you want to download videos from YouTube...
 ```bash
-$ bash m3u8-download.sh [YouTube url]
+$ bash pwdownloader.sh [YouTube url]
 ```
 ..., the above command works just fine.
 ### Other sites
 You can download from several video streamers online, e.g. [Gimy劇迷](https://gimy.tv/), [MOMOVOD](https://www.momovod.com/), [楓林TV](https://fenglin.tv/), ...
+```bash
+$ bash pwdownloader.sh
+```
+
+<!--
 ```bash 
 $ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.
 $ bash curl_preprocessing.sh
 $ bash m3u8-download.sh
 ```
+-->
+
 You shall be prompted to choose from several m3u8 sources, please choose URLs from the same server. 
 <img src=./img/screenshot-11.png>
 For example, if one show has 6 episodes in total, and there are 5 servers, then you may be asked to decide the start and end indices of servers (a total of 30). Please be reminded that your input should be like <code>*a* *b*</code>, e.g. <code>19 24</code>.
@@ -63,7 +70,8 @@ After these process your videos will be downloaded in ./videos.
 ### What does each script do?
 * <code>curl.sh</code> grabs the source code from online video sites.
 * <code>curl_preprocessing.sh</code> changes the m3u8 URLs curled from the website to human readable ones, which is then a text file *curlresult.txt*.
-* <code>m3u8-download.sh</code> finalizes the prepare process. It reads your input server choice, on which *curlresult.sh* based. *curlresult.sh* is a list of command which will be parallely executed, thanks to [Alessandro Pezzato](https://stackoverflow.com/questions/10909685/run-parallel-multiple-commands-at-once-in-the-same-terminal).
+* <code>m3u8-download.sh</code> finalizes the prepare process. It reads your input server choice, on which *curlresult.sh* based. *curlresult.sh* is a list of command which will be parallely executed
+* <code>parallel.sh</code> is a script to assign multiple commands to PID, allowing parallel execution. Credit belongs to [Alessandro Pezzato](https://stackoverflow.com/questions/10909685/run-parallel-multiple-commands-at-once-in-the-same-terminal).
 * <code>m3u8-download</code> is a script originally created by [williamchanrico](https://github.com/williamchanrico/m3u8-download), using <code>ffmpeg</code> command to grab and combine *.ts* from m3u8 online stream.
 
 ## Workarounds for DramaQ
@@ -84,7 +92,9 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 	* MacOS
 		* Download homebrew.
 		* brew install ffmpeg.
-		* run m3u8-download above-mentionedly.
+		```bash
+		$ bash ./scripts/m3u8-download [m3u8 url] [FILENAME]
+		```
 	* Windows
 		<details>
 			<summary>Download WSL (Windows Subsystem for Linux) from Microsoft Store</summary>
