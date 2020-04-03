@@ -41,7 +41,7 @@ $ bash pwdownloader.sh [YouTube url]
 ### Other sites
 You can download from several video streamers online, e.g. [Gimy劇迷](https://gimy.tv/), [MOMOVOD](https://www.momovod.com/), [楓林TV](https://fenglin.tv/), ...
 ```bash
-$ bash pwdownloader.sh
+$ bash pwdownloader.sh [URL] # URL of whichever episode of the TV show will be fine, tye code will grab all epispdes available for you. Please note that URL of a overview page doesn't work.
 ```
 
 <!--
