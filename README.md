@@ -70,7 +70,7 @@ After these process your videos will be downloaded in ./videos.
 ### What does each script do?
 * <code>curl.sh</code> grabs the source code from online video sites.
 * <code>curl_preprocessing.sh</code> changes the m3u8 URLs curled from the website to human readable ones, which is then a text file *curlresult.txt*.
-* <code>m3u8-download.sh</code> finalizes the prepare process. It reads your input server choice, on which *curlresult.sh* based. *curlresult.sh* is a list of command which will be parallely executed
+* <code>m3u8-download.sh</code> finalizes the prepare process. It reads your input server choice, on which *curlresult.sh* based. *curlresult.sh* is a list of command which will be parallely executed.
 * <code>parallel.sh</code> is a script to assign multiple commands to PID, allowing parallel execution. Credit belongs to [Alessandro Pezzato](https://stackoverflow.com/questions/10909685/run-parallel-multiple-commands-at-once-in-the-same-terminal).
 * <code>m3u8-download</code> is a script originally created by [williamchanrico](https://github.com/williamchanrico/m3u8-download), using <code>ffmpeg</code> command to grab and combine *.ts* from m3u8 online stream.
 
@@ -117,7 +117,7 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 		
 		* Now you can use this repository smoothly.
 		```bash
-		$ bash ./m3u8-download [URL] [FILENAME YOU WANT]
+		$ bash ./scripts/m3u8-download [URL] [FILENAME YOU WANT]
 		```
 		* Whoa, your video would be downloaded now. Have a coffee, it will be finished in a few minutes based on the size of the video.
 ## Acknowledgement
