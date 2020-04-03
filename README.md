@@ -1,4 +1,4 @@
-# m3u8-download.sh, a semi-automated video downloader
+# pwdownloader.sh, a semi-automated video downloader
 ## Author
 > patrickwoolf
 ## Importance
