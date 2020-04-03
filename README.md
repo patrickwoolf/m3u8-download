@@ -88,7 +88,9 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
   <img src=./img/screenshot-7.png>
   <img src=./img/screenshot-9.png>
 	* Ubuntu/Debian and other Linux: 
-		* <img src=./img/screenshot-10.png>
+		```bash
+		$ bash ./scripts/m3u8-download [m3u8 url] [FILENAME]
+		```
 	* MacOS
 		* Download homebrew.
 		* brew install ffmpeg.
