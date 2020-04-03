@@ -71,8 +71,9 @@ Because for dramaq, grabbing m3u8 directly from curl may not be feasible, here's
 * First open Firefox and go to the video website of your interest, but do not play now.
   <img src=./img/screenshot-3.png>
 * Open Network Monitor pressing shortcut F12, you should see the "Network" button in the toolbar.
-  |<img src=./img/screenshot-4.png>|<img src=./img/screenshot-5.png>|
-  |---|---|
+  <img src=./img/screenshot-4.png>
+  <img src=./img/screenshot-5.png>
+
 * Go back to the video player, press F5 or whatever to reload the page. Now you shall play the embedded video.
   <img src=./img/screenshot-6.png>
 * Go back to Network Monitor, now type "m3u8" (without ") in the filter on the upper left. You shall see something like index.m3u8 or \*.m3u8 now. 
