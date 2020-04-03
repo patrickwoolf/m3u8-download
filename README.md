@@ -39,7 +39,7 @@ $ bash m3u8-download.sh [YouTube url]
 ```
 ..., the above command works just fine.
 ### Other sites
-You can download from several video streamers online, e.g. Gimy劇迷, MOMOVOD, ...
+You can download from several video streamers online, e.g. [Gimy劇迷](https://gimy.tv/), [MOMOVOD](https://www.momovod.com/), [楓林TV](https://fenglin.tv/), ...
 ```bash 
 $ bash curl.sh [URL] # URL of whichever episode you are interested in, please note that URL of a overview page doesn't work.
 $ bash curl_preprocessing.sh
