@@ -14,9 +14,7 @@ fi
 cp ./curlresult.txt ./curlresult.sh
 cat curlresult.sh
 n=$(wc -l < curlresult.sh)
-if [[ -z $(ls | grep videos) ]]; then
-	mkdir videos
-fi
+mkdir -p ../videos
 echo
 echo 'Total number of m3u8 sources available: ' $n
 read -p "Please choose which server you want (e.g. you.tube): " 'server'
