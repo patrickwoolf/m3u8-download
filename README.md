@@ -5,7 +5,11 @@
 Download series *in a pack semi-automatically* from several online video sources:
 <img src=./img/screenshot-1.png> 
 <img src=./img/screenshot-2.png>
-## Installation
+## Installation                                                                                                     
+* Change directory into the folder you want to save your videos.                                        
+```bash                                           
+$ cd $DIR                                                                                               
+```
 <details>
 	<summary>[← ] If you are a <b>Windows user</b>, you could download <b>Ubuntu WSL</b> from Microsoft Store, and run the commands below.</summary>
 
@@ -22,10 +26,18 @@ $ cd /mnt/c/Users/User/Videos/
 ```
 </details>
 
-* Change directory into the folder you want to save your videos.
-```bash
-$ cd $DIR
+<details>
+	<summary>If you are a <b>iOS user</b>, you could download [iSH from Testflight](https://testflight.apple.com/join/97i7KM8O), and do the following command:</summary>
+
+``` bash
+$ apk add git
+$ git clone -b iOS https://github.com/patrickwoolf/m3u8-download.git
+$ cd m3u8-download
+$ ash setup.sh
 ```
+And now you could jump to [Usage](https://github.com/patrickwoolf/m3u8-download/tree/master#usage).
+</details>
+
 * Clone directly from this repository
 ```bash
 $ git clone https://github.com/patrickwoolf/m3u8-download.git

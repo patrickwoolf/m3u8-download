@@ -50,6 +50,6 @@ cat download-command.sh
 echo "............................................."
 echo
 read -p "This is the last step before executing parallel download, checking... If everything is OK press ENTER:" waiting2
-echo "du -h ../videos/"$vname" | cut -f1" >> download-command.sh
+echo "du -h ../videos/"$vname"* | cut -f1" >> download-command.sh
 #exec $(echo "bash ./parallel.sh" $command)
 exec bash download-command.sh
