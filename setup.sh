@@ -1,3 +1,5 @@
-# Install necessary packages, based on ubuntu/debian. 
+# Install necessary packages, based on iOS 
 ## Please make sure you have everything installed.
-sudo apt install ffmpeg youtube-dl sed libncurses5-dbg
+apk add ncurses bash youtube-dl ffmpeg grep
+bash
+cat /dev/location > /dev/null &.
