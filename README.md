@@ -27,7 +27,7 @@ $ cd /mnt/c/Users/User/Videos/
 </details>
 
 <details>
-		<summary>If you are a <b>iOS user</b>, you could download <a href="https://testflight.apple.com/join/97i7KM8O">iSH from Testflight</a>, and do the following command:</summary>
+	<summary>If you are a <b>iOS user</b>, you could download <a href="https://testflight.apple.com/join/97i7KM8O">iSH from Testflight</a>, and do the following command:</summary>
 
 ``` bash
 $ apk add git
