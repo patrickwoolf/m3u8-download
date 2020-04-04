@@ -45,6 +45,16 @@ command=$(cat curlresult.sh | grep \.\/m3u8)
 echo
 echo "These are going to be executed, you can copy and run them on different sessions: "
 echo
+if [[ $((x))==0 ]]; then
+	echo "bash " $command > download-command.sh
+	sed -i -e 's/\"//g' download-command.sh
+	cat download-command.sh
+	echo "............................................."
+	echo
+	read -p "This is the last step before executing parallel download, checking... If everything is OK press ENTER:" waiting2
+	echo "du -h ../videos/"$vname"* | cut -f1" >> download-command.sh
+	exec bash download-command.sh
+fi
 echo "bash ./parallel.sh" $command > download-command.sh
 cat download-command.sh
 echo "............................................."
