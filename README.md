@@ -2,7 +2,7 @@
 ## Author
 > patrickwoolf
 ## Importance
-Download series *in a pack semi-automatically* from several online video sources:
+Download online videos in *whole series semi-automatically* from several mainstream video streamers online, e.g. [小鴨影音](http://www.777drama.com/), [Gimy劇迷](https://gimy.tv/), [MOMOVOD](https://www.momovod.com/), [楓林TV](https://fenglin.tv/), ...:
 <img src=./img/screenshot-1.png> 
 <img src=./img/screenshot-2.png>
 ## Installation                                                                                                     
