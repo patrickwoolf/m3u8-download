@@ -45,7 +45,8 @@ command=$(cat curlresult.sh | grep \.\/m3u8)
 echo
 echo "These are going to be executed, you can copy and run them on different sessions: "
 echo
-if [[ $((x))==0 ]]; then
+if [[ $x == "0" ]]; then
+	echo "ONLY "$x" FILE IS TO BE DOWNLOADED."
 	echo "bash " $command > download-command.sh
 	sed -i -e 's/\"//g' download-command.sh
 	cat download-command.sh
