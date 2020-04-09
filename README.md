@@ -3,6 +3,7 @@
 > patrickwoolf
 ## Importance
 Download online videos in *whole series semi-automatically* from several mainstream video streamers online, e.g. [小鴨影音](http://www.777drama.com/), [Gimy劇迷](https://gimy.tv/), [MOMOVOD](https://www.momovod.com/), [楓林TV](https://fenglin.tv/), ...:
+*The above streaming sites are currently down, there's temporary workaround compatible with kubo, please pull from [sitesclosed branch](https://github.com/patrickwoolf/m3u8-download/tree/sitesclosed).*
 <img src=./img/screenshot-1.png> 
 <img src=./img/screenshot-2.png>
 ## Installation                                                                                                     
