@@ -6,5 +6,3 @@ for (( i="$start"; i<="$ep"; i++ )); do
 		echo "$line" >> curlresult.txt
 	done <<< $(curl `echo $1 | sed -e 's/nid../nid\/'$i'/g'` | grep -ohP http.*?index\.m3u8 | sed -e 's/\\//g' | sed -e '/\?/d') 
 sed '$!N; /^\(.*\)\n\1$/!P; D' -i curlresult.txt
-done
-echo "created curlresult.txt"
