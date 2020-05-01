@@ -1,0 +1,2 @@
+bash ./parallel.sh "./m3u8-download https://tudou.diediao-kuyun.com/20200411/14657_f18ffe5d/index.m3u8 ../videos/mama13" "./m3u8-download https://tudou.diediao-kuyun.com/20200412/14786_622cb1b8/index.m3u8 ../videos/mama14" "./m3u8-download https://tudou.diediao-kuyun.com/20200418/15225_e33fb1f2/index.m3u8 ../videos/mama15" "./m3u8-download https://you.tube-kuyun.com/20200419/10006_61839a9c/index.m3u8 ../videos/mama16" "./m3u8-download https://tudou.diediao-kuyun.com/20200405/14269_f297d441/index.m3u8 ../videos/mama17"
+du -h ../videos/mama* | cut -f1
