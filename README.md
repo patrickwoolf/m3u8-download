@@ -2,7 +2,7 @@
 ## Author
 > patrickwoolf
 ## Importance
-Download online videos in *whole series semi-automatically* from several mainstream video streamers online, e.g. [小鴨影音](http://www.777drama.com/), [Gimy劇迷](https://gimy.tv/), [MOMOVOD](https://www.momovod.com/), [楓林TV](https://fenglin.tv/), ...:
+Download online videos in *whole series semi-automatically* from several mainstream video streamers online, e.g. [小鴨影音](https://778mov.com), [Gimy劇迷](https://gimy.co/), [貓狗影視](https://maogou.tv/),  [MOMOVOD (No longer supported)](https://www.momovod.com/), [楓林TV (no longer supported)](https://fenglin.tv/), ...:
 <img src=./img/screenshot-1.png> 
 <img src=./img/screenshot-2.png>
 ## Installation                                                                                                     
