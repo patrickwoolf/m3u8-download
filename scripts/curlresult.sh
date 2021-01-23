@@ -1,2 +1,5 @@
-https://cdn-yong.bejingyongjiu.com/20200730/18182_f699d598/index.m3u8
-https://cdn-yong.bejingyongjiu.com/20200730/18183_3e9de0b6/index.m3u8
+"bash ./m3u8-download https://mei.huazuida.com/20191111/16517_de232724/index.m3u8 ../videos/er2"
+"bash ./m3u8-download https://mei.huazuida.com/20191111/16516_57ff0b45/index.m3u8 ../videos/er3"
+"bash ./m3u8-download https://mei.huazuida.com/20191111/16515_a65bff9a/index.m3u8 ../videos/er4"
+"bash ./m3u8-download https://mei.huazuida.com/20191111/16514_cf222924/index.m3u8 ../videos/er5"
+"bash ./m3u8-download https://mei.huazuida.com/20191111/16513_21cbca18/index.m3u8 ../videos/er6"
